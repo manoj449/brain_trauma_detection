@@ -1,0 +1,7 @@
+# Ignore the large model file
+model/brain_trauma_model.h5
+
+# Optional: ignore other large files or temp files
+*.pyc
+__pycache__/
+.env

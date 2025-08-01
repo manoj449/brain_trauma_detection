@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Trauma Detection</title>
+</head>
+<body>
+    <h1>Brain Trauma Detection from MRI</h1>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Upload & Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Result: {{ prediction }}</h2>
+        <img src="{{ image_path }}" alt="MRI Image" width="300">
+    {% endif %}
+</body>
+</html>
