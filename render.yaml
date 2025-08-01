@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: brain-trauma-app
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    autoDeploy: true

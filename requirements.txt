@@ -1,4 +1,5 @@
 Flask
-tensorflow
+requests
+tensorflow==2.14.0
 numpy
-pillow
+gunicorn
