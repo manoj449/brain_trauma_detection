@@ -1,5 +1,4 @@
 Flask
 requests
 tensorflow==2.14.0
-numpy
 gunicorn
